@@ -11,6 +11,7 @@ const Hmm = () => {
             height: 500,
             backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',
+            backgroundAttachment: 'fixed',
           }}
         />
       </Grid>

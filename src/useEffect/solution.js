@@ -11,7 +11,7 @@ const Solution = () => {
     }, 1000);
 
     return () => clearInterval(id);
-  }, []);
+  }, [count]);
 
   useEffect(() => {
     let id = setInterval(() => {
@@ -19,7 +19,7 @@ const Solution = () => {
     }, 900);
 
     return () => clearInterval(id);
-  }, []);
+  }, [fastCount]);
 
   return (
     <>

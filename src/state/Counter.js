@@ -2,15 +2,9 @@ import { useState } from 'react';
 import Button from '../customButton';
 import { buttonContainerStyle, counterStyle } from '../style';
 
-const State2 = () => {
+const Counter = () => {
   const [count, setCount] = useState(0);
-
-  const increment = () => {
-    setCount(count + 1);
-    setCount(count + 1);
-    setCount(count + 1);
-  };
-
+  const increment = () => setCount(count + 1);
   const decrement = () => setCount(count - 1);
   const reset = () => setCount(0);
 
@@ -26,4 +20,4 @@ const State2 = () => {
   );
 };
 
-export default State2;
+export default Counter;

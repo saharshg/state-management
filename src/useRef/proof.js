@@ -15,15 +15,13 @@ const Proof = () => {
   });
 
   useEffect(() => {
-    ref.current = () => {
-      setCount(count + 1);
-    };
+    ref.current = () => setCount(count + 1);
   });
 
   useEffect(() => {
     let id = setInterval(() => ref.current(), 1000);
     return () => clearInterval(id);
-  }, []);
+  }, [count]);
 
   return (
     <>

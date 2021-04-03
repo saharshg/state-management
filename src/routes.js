@@ -1,8 +1,10 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Header from './header';
-import State from './state/State';
+import State from './state/Counter';
 import State2 from './state/State2';
 import State3 from './state/State3';
+import NewCounter from './useContext/brandNewCounter';
+import WhyContext from './useContext/why';
 import AutoCount from './useEffect/autoCount';
 import Hmm from './useEffect/hmm';
 import NotEnough from './useEffect/notEnough';
@@ -46,6 +48,12 @@ const Routes = () => {
           </Route>
           <Route path='/useRef/3'>
             <Proof />
+          </Route>
+          <Route exact path='/useContext'>
+            <WhyContext />
+          </Route>
+          <Route path='/useContext/1'>
+            <NewCounter />
           </Route>
         </Switch>
       </section>

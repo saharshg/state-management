@@ -4,8 +4,8 @@ import { counterStyle } from '../style';
 const Understanding = () => {
   const [count, setCount] = useState(6);
 
-  const invincible = useRef(count);
   // { current: 'initial value of count -> 6' }
+  const invincible = useRef(count);
 
   useEffect(() => {
     let id = setInterval(() => setCount(count + 1), 1000);

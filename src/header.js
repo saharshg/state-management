@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const topics = ['useState', 'useEffect', 'useRef', 'customHook'];
+const topics = ['useState', 'useEffect', 'useRef', 'useContext'];
 
 export default function Header() {
   const classes = useStyles();

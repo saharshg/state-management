@@ -35,6 +35,10 @@ const subTopicMap = {
     { title: 'Perfection!', link: '/useRef/2' },
     { title: 'Proof', link: '/useRef/3' },
   ],
+  useContext: [
+    { title: 'Why?', link: '/useContext' },
+    { title: 'Counter with Context', link: '/useContext/1' },
+  ],
 };
 
 const SubHeader = ({ selectedHeader }) => {
